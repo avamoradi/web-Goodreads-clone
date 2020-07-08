@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'lato';
+  src : url('https://fonts.googleapis.com')
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
 *{
   margin:0;
   padding: 0;
@@ -5,9 +14,6 @@
 
 header {
   background-color:#EDEADB ;
-  display: flex;
-  justify-content: space-ar;
-  border-bottom: 1px solid #9c9c9a;
 }
 
 main{
@@ -17,33 +23,87 @@ main{
 footer{
   background-color: #F9F8F4;
 }
-h1{
-  margin: 50px;
-}
 
-form{
+
+.nav {
   display: flex;
-  margin: 50px;
+  justify-content: space-around;
+  border-bottom: 1px solid #9c9c9a;
+
 }
 
-input{
+ #top {
+  display: flex;
+  margin: 10px;;
+}
+
+.image-top{
+  max-width: 170px;
+  height: 40px;
+  margin: 10px;
+}
+
+#top input{
   display: block;
   margin: 5px;
   padding: 5px;
 }
 
-#rememberme{
+#top #rememberme{
   display: inline;
 }
 
-#submit{
-  padding: 3px;
+#top #submit{
   width: 60px;
+  height: 40px;
   background-color: #382110;
   color: white;
   border-radius: 5px;
   border: none;
 }
-label{
-  
+
+#head input {
+display: block;
+margin: 5px;
+padding: 5px;
+}
+
+.image-head {
+  margin: 20px;
+  padding: 20px;
+}
+
+.div-signin {
+  display: flex;
+  font-size: 10px;;
+}
+
+.signin-logo{
+  display: flex;
+  background-color: #333333;
+  color:white;
+}
+
+.signin-logo ul {
+  display: flex;
+  list-style: none;
+}
+
+.signin-logo span{
+  margin: 5px;
+}
+
+.signin-logo img {
+  max-width: 20px;
+  margin: 5px;;
+}
+
+.head-right {
+  width: 25%;
+}
+
+.head-right h2{
+  margin: 10px;
+  font-size: 20px;
+  font-weight:normal;
 }
