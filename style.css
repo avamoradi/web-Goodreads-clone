@@ -24,8 +24,7 @@ footer{
   background-color: #F9F8F4;
 }
 
-
-.nav {
+.flex {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #9c9c9a;
@@ -47,6 +46,7 @@ footer{
   display: block;
   margin: 5px;
   padding: 5px;
+  border:none;
 }
 
 #top #rememberme{
@@ -62,12 +62,29 @@ footer{
   border: none;
 }
 
-#head input {
+.header-down{
+  justify-content: center;
+  border-bottom: none;
+}
+
+#form-head {
+  max-width:300px;
+}
+#form-head input {
 display: block;
 margin: 5px;
 padding: 5px;
+width: 90%;
+border: none;
+border-radius: 3px;
 }
 
+#signin-button {
+  background-color: #FDD05F;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0px 5px 0px;
+}
 .image-head {
   margin: 20px;
   padding: 20px;
@@ -78,10 +95,18 @@ padding: 5px;
   font-size: 10px;;
 }
 
+.click{
+  color: #7c7c79;
+}
+
 .signin-logo{
   display: flex;
   background-color: #333333;
   color:white;
+  max-width: 300px;
+  padding: 7px;
+  border-radius: 5px;;
+  margin-top: 25px;
 }
 
 .signin-logo ul {
@@ -94,12 +119,13 @@ padding: 5px;
 }
 
 .signin-logo img {
-  max-width: 20px;
+  max-width: 25px;
   margin: 5px;;
 }
 
 .head-right {
   width: 25%;
+  margin-left:90px;
 }
 
 .head-right h2{
