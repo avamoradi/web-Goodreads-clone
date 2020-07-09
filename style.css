@@ -5,11 +5,13 @@
 
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  
 }
 
 *{
   margin:0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -27,13 +29,16 @@ footer{
 .flex {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid #9c9c9a;
 
 }
 
  #top {
   display: flex;
   margin: 10px;;
+}
+
+.header-top{
+  border-bottom: 1px solid #9c9c9a;
 }
 
 .image-top{
@@ -64,7 +69,8 @@ footer{
 
 .header-down{
   justify-content: center;
-  border-bottom: none;
+  border-bottom: 15px solid #F3F2E8;
+  margin-top: 10px;
 }
 
 #form-head {
@@ -125,11 +131,39 @@ border-radius: 3px;
 
 .head-right {
   width: 25%;
-  margin-left:90px;
+  margin-left:150px;
 }
 
 .head-right h2{
   margin: 10px;
   font-size: 20px;
   font-weight:normal;
+}
+
+main{
+  margin: 0 auto;
+}
+
+  #main-left {
+  width: 60%;
+}
+
+.main-right {
+  width: 40%;
+  background-color: aquamarine;
+}
+
+.box{
+  font-size: 13px;
+  width: 25%;
+  margin-right: 50px;
+}
+
+.box h3 {
+  font-size: 18px;;
+}
+
+#left-row2 {
+  background-color: #F4F2E9;
+  width: 50%;
 }
