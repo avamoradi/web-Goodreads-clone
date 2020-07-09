@@ -144,19 +144,24 @@ main{
   margin: 0 auto;
 }
 
+.empty-space {
+  width: 20%;
+  background-color: black;
+}
+
   #main-left {
-  width: 60%;
+  width: 70%;
 }
 
 .main-right {
-  width: 40%;
+  width: 30%;
   background-color: aquamarine;
 }
 
 .box{
   font-size: 13px;
-  width: 25%;
-  margin-right: 50px;
+  width: 40%;
+  padding: 10px;
 }
 
 .box h3 {
@@ -164,6 +169,19 @@ main{
 }
 
 #left-row2 {
-  background-color: #F4F2E9;
-  width: 50%;
+  /*background-color: #F4F2E9;*/
+  border: 1px solid #F4F2E9 ;
+  border-radius: 3px;
+  
+}
+
+#image-row1 img{
+  margin: 5px;
+  width: 80px;
+  height: 120px;
+}
+
+.arrow {
+  max-width: 25px;
+  max-height: 25px;
 }
