@@ -142,11 +142,7 @@ border-radius: 3px;
 
 main{
   margin: 0 auto;
-}
-
-.empty-space {
-  width: 20%;
-  background-color: black;
+  width: 60%;
 }
 
   #main-left {
@@ -169,19 +165,34 @@ main{
 }
 
 #left-row2 {
-  /*background-color: #F4F2E9;*/
   border: 1px solid #F4F2E9 ;
-  border-radius: 3px;
+  border-radius: 10px;
+  background-color: #F4F2E9;
   
 }
 
-#image-row1 img{
-  margin: 5px;
+#left-row2 img{
+  margin: 0px 12px 0px 0px;
   width: 80px;
-  height: 120px;
+  height: 100px;
 }
 
 .arrow {
   max-width: 25px;
   max-height: 25px;
+}
+
+.part1{
+  width:70%;
+}
+
+.part2{
+  width: 30%;
+}
+
+.secondchild{
+  line-height: 18px;
+  width: 110px;
+  font-size: 13px;
+  font-weight: bold;
 }
