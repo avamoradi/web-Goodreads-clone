@@ -104,25 +104,175 @@
               <p class="secondchild">Zombies, Post Apocalyptic, Dystopia, Urban Fantasy</p>
               </div>
             </div>
+          </div> <!--end of discover -->
+        </div> <!--end of left row2-->
+
+        <div id="browseBox" >
+          <h2>Search and browse books</h2>
+
+          <div id="searchBox"  itemtype="https://schema.org/WebSite">
+            <meta itemprop="url" content="https://goodreads.com/">
+            <div id="sitesearch" itemtype="https://schema.org/SearchAction"     itemprop="potentialAction" itemscope="">
+              <div class="div" itemprop="target"  itemtype="https://schema.     org/EntryPoint">
+                <div class="meta" content="https://www.goodreads.com/search?q={search_term_string}" itemprop="urlTemplate">           
+                </div>
+              </div>
+              <div class="div" itemprop="query-input" itemscope="" itemtype="https://schema.org/PropertyValueSpecification">
+               <div class="meta" content="http://schema.org/True" itemprop="valueRequired">
+               </div>
+               <div class="meta" content="search_term_string" itemprop="valueName">          
+               </div>
+               <form id="headerSearchForm" action="/search" accept-charset="UTF-8" method="get">
+                <input name="utf8" type="hidden" value="✓">
+                <div class="auto_complete_field_wrapper">
+                  <input type="text" name="query" id="sitesearch_field" placeholder="Title / Author / ISBN">
+                  <div id="sitesearch_autocomplete"></div>
+                  <img style="display: none" id="sitesearch_field_loading" class="loading" src="https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif" alt="Loading trans">
+                  </div>
+                  <a class="submitLink" href="#" onclick="$j('#headerSearchForm').submit(); return false;"><img width="16" title="Title / Author / ISBN" alt="search" src="https://s.gr-assets.com/assets/layout/magnifying_glass-a2d7514d50bcee1a0061f1ece7821750.png"></a>
+               </form>
+             </div>
+           </div>
           </div>
-        </div>
+  
+          <div class="u-defaultType d-flex flex-row bd-highlight mb-3  justify-content-between" >
+            <div class="left p-2 bd-highlight" style="width: 25%">
+              <a class="gr-hyperlink" href="/genres/art">Art</a><br>
+              <a class="gr-hyperlink" href="/genres/biography">Biography
+              </a><br>
+              <a class="gr-hyperlink" href="/genres/business">Business</a><br>
+              <a class="gr-hyperlink" href="/genres/children-s">Children's
+              </a><br>
+              <a class="gr-hyperlink" href="/genres/christian">Christian
+              </a><br>
+              <a class="gr-hyperlink" href="/genres/classics">Classics</a><br>
+              <a class="gr-hyperlink" href="/genres/comics">Comics</a><br>
+              <a class="gr-hyperlink" href="/genres/cookbooks">Cookbooks
+              </a><br>
+            </div>
+            <div class="left p-2 bd-highlight" style="width: 25%">
+              <a class="gr-hyperlink" href="/genres/ebooks">Ebooks</a><br>
+              <a class="gr-hyperlink" href="/genres/fantasy">Fantasy</a><br>
+              <a class="gr-hyperlink" href="/genres/fiction">Fiction</a><br>
+              <a class="gr-hyperlink" href="/genres/graphic-novels">Graphic Novels</a><br>
+              <a class="gr-hyperlink" href="/genres/historical-fiction">Historical Fiction</a><br>
+              <a class="gr-hyperlink" href="/genres/history">History</a><br>
+              <a class="gr-hyperlink" href="/genres/horror">Horror</a><br>
+              <a class="gr-hyperlink" href="/genres/memoir">Memoir</a><br>  
+            </div>
+            <div class="left p-2 bd-highlight" style="width: 25%">
+                <a class="gr-hyperlink" href="/genres/music">Music</a><br>
+                <a class="gr-hyperlink" href="/genres/mystery">Mystery</a><br>
+                <a class="gr-hyperlink" href="/genres/non-fiction">Nonfiction</a><br>
+                <a class="gr-hyperlink" href="/genres/poetry">Poetry</a><br>
+                <a class="gr-hyperlink" href="/genres/psychology">Psychology</a><br>
+                <a class="gr-hyperlink" href="/genres/romance">Romance</a><br>
+                <a class="gr-hyperlink" href="/genres/science">Science</a><br>
+                <a class="gr-hyperlink" href="/genres/science-fiction">Science Fiction
+                </a><br>      
+            </div>
+            <div class="left p-2 bd-highlight" style="width: 25%">
+                <a class="gr-hyperlink" href="/genres/self-help">Self Help</a><br>
+                <a class="gr-hyperlink" href="/genres/sports">Sports</a><br>
+                <a class="gr-hyperlink" href="/genres/thriller">Thriller</a><br>
+                <a class="gr-hyperlink" href="/genres/travel">Travel</a><br>
+                <a class="gr-hyperlink" href="/genres/young-adult">Young Adult</a><br>
+                <a class="gr-hyperlink" href="/genres">More genres</a>
+            </div>      
+          </div><!--end of udefaulttypr-->
+           
+        </div><!--end of browser box-->
+
       </div><!--end of main left-->
-      <div class="main-right flex">
-        <article class="article1">
+
+      <div class="main-right d-flex flex-column bd-highlight mb-3">
+        <div class="article1 p-2 bd-highlight">
           <h3>News & Interviews</h3>
           <a href="https://www.goodreads.com/interviews/show/1499.Colin_Jost?int=Soapbox_Signed_Out_2020_Jul&amp;int_sub=Interview_1499">This Just In: ‘SNL’ Star Colin Jost Is Seriously Bookish</a>
           <img  src="https://images.gr-assets.com/featureditems/1593725102p7/5088.jpg" alt="This Just In: ‘SNL’ Star Colin Jost Is Seriously Bookish">
-
           <div><span data-reactid=".dey1piqtxc.0.3.0"><span ><span >28 likes</span>
-          </span><span ><span > · </span></span><span ><span >1 comment</span></span></span>
+           </span><span ><span > · </span></span><span ><span >1 comment</span></span></span>
+          </div>
+        </div><!--end of article1-->
+
+        <div id="listsTeaserBox" class="featureTeaserBox p-2 bd-highlight">
+          <h2>Love lists?</h2>
+          <div class="listTeaser d-flex justify-content-between">
+            <div class="flexlink">
+              <div class="listTitle">
+                <a href="/list/show/19.Best_for_Book_Clubs">Best for Book Clubs</a>
+              </div>
+              <div class="smallText greyText">
+                6,788 books | 12,415 voters
+              </div>
+            </div>
+            <div class="listImg">
+              <a href="/book/show/4667024-the-help"><img alt="The Help by Kathryn Stockett" title="The Help by Kathryn Stockett" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572940430l/4667024._SY75_.jpg"></a>
+              <a href="/book/show/77203.The_Kite_Runner"><img alt="The Kite Runner by Khaled Hosseini" title="The Kite Runner by Khaled Hosseini" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579036753l/77203._SY75_.jpg"></a>
+              <a href="/book/show/43641.Water_for_Elephants"><img alt="Water for Elephants by Sara Gruen" title="Water for Elephants by Sara Gruen" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494428973l/43641._SY75_.jpg"></a>
+              <a href="/book/show/19063.The_Book_Thief"><img alt="The Book Thief by Markus Zusak" title="The Book Thief by Markus Zusak" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522157426l/19063._SY75_.jpg"></a>
+            </div>
           </div>
 
+          <div class="listTeaser d-flex justify-content-between">
+            <div class="flexlink">
+              <div class="listTitle">
+                <a href="/list/show/6.Best_Books_of_the_20th_Century">Best Books of the 20th Century
+                </a>
+              </div>
+              <div class="smallText greyText">
+                7,526 books | 49,242 voters
+              </div>
+            </div>
+            <div class="listImg">
+              <a href="/book/show/2657.To_Kill_a_Mockingbird"><img alt="To Kill a Mockingbird by Harper Lee" title="To Kill a Mockingbird by Harper Lee" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657._SY75_.jpg"></a>
+              <a href="/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone"><img alt="Harry Potter and the Sorcerer's Stone by J.K. Rowling" title="Harry Potter and the Sorcerer's Stone by J.K. Rowling" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY75_.jpg"></a>
+              <a href="/book/show/4671.The_Great_Gatsby"><img alt="The Great Gatsby by F. Scott Fitzgerald" title="The Great Gatsby by F. Scott Fitzgerald" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SY75_.jpg"></a>
+              <a href="/book/show/170448.Animal_Farm"><img alt="Animal Farm by George Orwell" title="Animal Farm by George Orwell" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1325861570l/170448._SY75_.jpg">
+              </a>
+            </div>
+          </div>
 
+          <div class="listTeaser d-flex justify-content-between">
+            <div class="flexlink">
+              <div class="listTitle">
+                <a href="/list/show/11.Best_Crime_Mystery_Books">Best Crime &amp; Mystery Books</a>
+              </div>
+              <div class="smallText greyText">
+                5,968 books | 13,951 voters
+              </div>
+           </div>
+            <div class="listImg">
+              <a href="/book/show/2429135.The_Girl_with_the_Dragon_Tattoo"><img alt="The Girl with the Dragon Tattoo by Stieg Larsson" title="The Girl with the Dragon Tattoo by Stieg Larsson" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327868566l/2429135._SX50_.jpg"></a>
+              <a href="/book/show/16299.And_Then_There_Were_None"><img alt="And Then There Were None by Agatha Christie" title="And Then There Were None by Agatha Christie" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1391120695l/16299._SY75_.jpg"></a>
+              <a href="/book/show/960.Angels_Demons"><img alt="Angels &amp; Demons by Dan Brown" title="Angels &amp; Demons by Dan Brown" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558711679l/960._SY75_.jpg"></a>
+              <a href="/book/show/17899948-rebecca"><img alt="Rebecca by Daphne du Maurier" title="Rebecca by Daphne du Maurier" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386605169l/17899948._SX50_.jpg">
+              </a>
+            </div>
+          </div>
+          <p>
+            <a class="gr-hyperlink" href="/list">More book lists</a>
+          </p>
+        </div> <!--the end of div ListTeaserBox-->
 
-        </article>
-        
-
-      </div>
+        <div class="p-2 bd-highlight">
+          <div id="authorsTeaserBox" class="featureTeaserBox">
+            <h2>
+              Are you an author or a publisher?
+            </h2>
+            <p>
+              Gain access to a massive audience of more than
+              90 million book lovers.
+              Goodreads is a great place to promote your books.
+            </p>
+            <div style="text-align: center">
+              <a class="gr-button " href="/author/program">Author program</a>
+              &nbsp;&nbsp;
+              <a class="gr-button " href="/advertisers">Advertise</a>
+            </div>
+          </div>
+        </div>
+      </div><!--end of main right-->
     </main>
 
     
@@ -133,10 +283,7 @@
        
      
   
-  <main>
-    <section id="left"></section>
-    <section id="right"></section>
-  </main>
+  
   <footer></footer>
 </body>
 </html>

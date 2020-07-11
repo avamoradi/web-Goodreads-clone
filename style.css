@@ -26,6 +26,14 @@ footer{
   background-color: #F9F8F4;
 }
 
+h2{
+  font-size: 18px;
+}
+
+p{
+  line-height: 18px;
+}
+
 .flex {
   display: flex;
   justify-content: space-around;
@@ -142,17 +150,16 @@ border-radius: 3px;
 
 main{
   margin: 0 auto;
-  width: 65%;
+  width: 70%;
 }
 
   #main-left {
-  width: 70%;
+  width: 65%;
   margin: 10px;
 }
 
 .main-right {
-  width: 30%;
-  background-color: aquamarine;
+  width: 35%;
   margin: 10px;
 }
 
@@ -206,4 +213,81 @@ main{
 
 .article1 img{
   max-width:100%;
+}
+
+#listsTeaserBox h2{
+  margin: 20px 0px 10px 0px;
+}
+
+.listTeaser{
+  border-bottom: 1px solid  #ebece7;
+  padding: 5px;
+}
+
+.listTitle {
+  line-height: 10px;;
+}
+
+.listTitle a {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #00635d;
+
+}
+
+.smallText {
+  font-size: 11px;
+  line-height: 14px;
+  text-align: left;
+  color:#999;
+}
+
+.listImg img {
+  max-height: 40px;
+  cursor: pointer;
+}
+
+.listImg {
+  max-width: 120px;
+  max-height: 40px;
+}
+
+#authorsTeaserBox p {
+  margin: 18px 0px;
+  line-height: 18px;
+  font-size: 14px;
+
+}
+
+.gr-hyperlink {
+  color:#00635D;
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.gr-button {
+  background-color: #F4F1EA;
+  border: 1px solid rgb(214, 208, 196);
+  color: #333333;
+  font-size: 11px;
+  padding: 4px 12px;
+}
+
+.u-defaultType a {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #00635D;
+  text-decoration: none;
+}
+
+#browseBox {
+  margin-top: 10px;;
+}
+
+.auto_complete_field_wrapper{
+font-size: 12px;
+line-height: 18px;
+text-align: left;
 }
