@@ -5,7 +5,8 @@
 
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-  
+  margin: 0;
+  padding: 0;
 }
 
 *{
@@ -283,7 +284,7 @@ main{
 }
 
 #browseBox {
-  margin-top: 10px;;
+  margin-top: 10px;
 }
 
 .auto_complete_field_wrapper{
@@ -291,3 +292,69 @@ font-size: 12px;
 line-height: 18px;
 text-align: left;
 }
+
+#column1{
+  width:60%;
+  margin: 20px;
+}
+
+#column2{
+  margin: 20px;
+  width: 20%;
+  align-items: flex-end;
+}
+
+
+.responsiveSiteFooter__link {
+  color: #382110;
+  text-decoration: none;
+}
+
+.responsiveSiteFooter__linkListItem {
+  line-height: 1.5;
+}
+
+.responsiveSiteFooter__linkList {
+  font-size: 14px;
+  list-style: none;
+}
+
+.responsiveSiteFooter__heading {
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 12px 0;
+  text-transform: uppercase;
+  color: #767676;
+  margin-bottom: 8px;
+  font-size: 16px;
+
+}
+
+.gr-row{
+  margin-top: 20px;
+}
+
+.gr-col-lg-4{
+  margin: 10px;
+}
+
+.responsiveSiteFooter__socialLink {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 8px;
+
+}
+
+.responsiveSiteFooter__appLinksColumnContents {
+  margin: 10px;
+  width: auto;
+
+}
+
+footer{
+  height: 240px;
+}
+
+
+
+
