@@ -8,42 +8,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-top flex">
+  <header class="d-flex flex-column">
+    <div class="header-top d-flex justify-content-around">
       <img class="image-top" src="header_logo.png" alt="header logo">
-      <form id="top">
-        <div>
+      <form id="top" class="d-flex ">
+        <div class="formbox">
           <input type="text" name="email" id="email" placeholder="Email address">
-          <input type="checkbox" name="rememberme" id="rememberme">
-          <label for="rememberme">Remember me</label>
+          <div class="d-flex">
+            <input type="checkbox" name="rememberme" id="rememberme"  checked>
+            <label  for="rememberme">Remember me</label>
+          </div>
         </div>
-        <div>
+        <div class="formbox">
           <input type="text" name = "paswoord" id="paswoord" placeholder="Password">
           <label for="paswoord">Forget it?</label>
-          </div>
-          <input type="submit" id="submit" value="Sign in">
+        </div>
+          <input  type="submit" id="submit" value="Sign in">
       </form>
-    </div>
-    <div class="header-down flex">
-      <div>
-       <img class="image-head" src="headline-e.png" alt="meet your next favorite book">
+    </div><!--end of header top-->
+    <div class="header-down d-flex justify-content-around">
+      <div class="image-head">
+       <img  src="headline-e.png" alt="meet your next favorite book">
       </div>
       <div class="head-right">
         <h2>New here? Create a free account!</h2>
         <form id="form-head">
-          <input type="text" name="user-name" placeholder="Name">
-          <input type="text" name="email-address" placeholder="Email address">
-          <input type="text" name="Password" placeholder="Pasword">
-          <div class= "div-signin">
+          <input class="input-form" type="text" name="user-name" placeholder="Name">
+          <input type="text" class="input-form" name="email-address" placeholder="Email address">
+          <input type="text" class="input-form" name="Password" placeholder="Pasword">
+          <div class= "div-signin d-flex">
             <input type="submit" value="Sign up" id="signin-button">
             <div class= "click">
               By clicking “Sign up” I agree to the Goodreads Terms of Service and confirm that I am at least 13 years old.
             </div>
           </div>
         </form>
-        <div class="signin-logo">
+        <div class="signin-logo d-flex justify-content-center">
           <span>or sign in using</span>
-          <ul>
+          <ul class="d-flex">
             <li><a href="#"><img src="facebook.svg" alt="facebook logo"></a></li>
             <li><a href="#"><img src="twitter.svg" alt="twitter logo"></a></li>
             <li><a href="#"><img src="google.png" alt="google logo"></a></li>
@@ -51,7 +53,7 @@
           </ul>
            </div>
      </div>
-    </div> <!--end of header-->
+    </div> <!--end of header down-->
   </header>
     <main class="d-flex flex-row bd-highlight mb-3">
       <div id="main-left" class="d-flex flex-column bd-highlight mb-3" >
@@ -67,11 +69,11 @@
             </div>
           </div>
         </div><!--end of row1-->
-        <div id="left-row2" class="p-2 bd-highlight ">
+        <div id="left-row2" class=" bd-highlight " >
           <h3>
             What will you discover?
           </h3>
-          <div class="d-flex ">
+          <div class="d-flex  bi-fix">
             <div class="part1">
               <p>Because Deborah liked…</p>
               <img src="1618._SX98_.jpg" alt="">
@@ -82,13 +84,13 @@
             </div>
             <div class="part2">
               <p>She discovered:</p>
-              <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="d-flex flex-row bd-highlight she-d">
               <img src="50365._SX98_.jpg" alt="">
               <p class="secondchild">Steam Punk, Science Fiction, Fantasy</p>
               </div>
             </div>
           </div> <!--end of discover row1-->
-          <div class="d-flex ">
+          <div class="d-flex  bi-fix">
             <div class="part1">
               <p>Because Deborah liked…</p>
               <img src="9648068._SX98_.jpg" alt="">
@@ -99,7 +101,7 @@
             </div>
             <div class="part2">
               <p>She discovered:</p>
-              <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="d-flex flex-row bd-highlight">
               <img src="8051458._SX98_.jpg" alt="">
               <p class="secondchild">Zombies, Post Apocalyptic, Dystopia, Urban Fantasy</p>
               </div>
@@ -110,26 +112,25 @@
         <div id="browseBox" >
           <h2>Search and browse books</h2>
 
-          <div id="searchBox"  itemtype="https://schema.org/WebSite">
+          <div   itemtype="https://schema.org/WebSite">
             <meta itemprop="url" content="https://goodreads.com/">
-            <div id="sitesearch" itemtype="https://schema.org/SearchAction"     itemprop="potentialAction" itemscope="">
-              <div class="div" itemprop="target"  itemtype="https://schema.     org/EntryPoint">
-                <div class="meta" content="https://www.goodreads.com/search?q={search_term_string}" itemprop="urlTemplate">           
+            <div  itemtype="https://schema.org/SearchAction"     itemprop="potentialAction" itemscope="" >
+              <div  itemprop="target"  itemtype="https://schema.     org/EntryPoint">
+                <div  content="https://www.goodreads.com/search?q={search_term_string}" itemprop="urlTemplate">           
                 </div>
               </div>
-              <div class="div" itemprop="query-input" itemscope="" itemtype="https://schema.org/PropertyValueSpecification">
-               <div class="meta" content="http://schema.org/True" itemprop="valueRequired">
+              <div  itemprop="query-input" itemscope="" itemtype="https://schema.org/PropertyValueSpecification">
+               <div  content="http://schema.org/True" itemprop="valueRequired">
                </div>
-               <div class="meta" content="search_term_string" itemprop="valueName">          
+               <div  content="search_term_string" itemprop="valueName">          
                </div>
-               <form id="headerSearchForm" action="/search" accept-charset="UTF-8" method="get">
+               <form id="headerSearchForm" action="/search" accept-charset="UTF-8" method="get" class="d-flex" >
                 <input name="utf8" type="hidden" value="✓">
-                <div class="auto_complete_field_wrapper">
-                  <input type="text" name="query" id="sitesearch_field" placeholder="Title / Author / ISBN">
-                  <div id="sitesearch_autocomplete"></div>
-                  <img style="display: none" id="sitesearch_field_loading" class="loading" src="https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif" alt="Loading trans">
-                  </div>
-                  <a class="submitLink" href="#" onclick="$j('#headerSearchForm').submit(); return false;"><img width="16" title="Title / Author / ISBN" alt="search" src="https://s.gr-assets.com/assets/layout/magnifying_glass-a2d7514d50bcee1a0061f1ece7821750.png"></a>
+                <div class="auto_complete_field_wrapper ">
+                  <input type="text" name="query" id="sitesearch_field" placeholder="Title / Author / ISBN" >
+                  <img style="display: none"   src="https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif" alt="Loading trans">           
+                </div>
+                <a  href="#" onclick="$j('#headerSearchForm').submit(); return false;"><img width="16" title="Title / Author / ISBN" alt="search" src="https://s.gr-assets.com/assets/layout/magnifying_glass-a2d7514d50bcee1a0061f1ece7821750.png"></a>
                </form>
              </div>
            </div>
@@ -276,11 +277,11 @@
     </main>
 
     <footer class="responsiveSiteFooter">
-      <div class="responsiveSiteFooter__contents" >
+      <div  >
         <div class="gr-row " >
-          <div class=" d-flex flex-row bd-highlight mb-3 justify-content-between">
-            <div class=" d-flex flex-row bd-highlight mb-3 justify-content-between" id="column1">
-              <div class="gr-col-lg-4 p-2 bd-highlight">
+          <div class=" d-flex flex-row bd-highlight  justify-content-between">
+            <div class=" d-flex flex-row bd-highlight  justify-content-between" id="column1">
+              <div class="gr-col-lg-4  bd-highlight">
                 <h3 class="responsiveSiteFooter__heading">Company</h3>
                 <ul class="responsiveSiteFooter__linkList">
                   <li class="responsiveSiteFooter__linkListItem">
@@ -306,7 +307,7 @@
                   </li>
                 </ul>
               </div><!--FOOTER COL1-1 -->
-              <div class=" gr-col-lg-4 p-2 bd-highlight">
+              <div class=" gr-col-lg-4 bd-highlight">
                 <h3 class="responsiveSiteFooter__heading">Work with us</h3>
                 <ul class="responsiveSiteFooter__linkList">
                 <li class="responsiveSiteFooter__linkListItem">
@@ -323,14 +324,16 @@
                 </li>
                 </ul>
             </div><!--footer col1-2 -->
-            <div class=" gr-col-lg-4 p-2 bd-highlight">
+            <div class=" gr-col-lg-4  bd-highlight">
               <h3 class="responsiveSiteFooter__heading">Connect</h3>
-              <div class="responsiveSiteFooter__socialLinkWrapper">
+              <div class="responsiveSiteFooter__socialLinkWrapper d-flex">
                 <a class="responsiveSiteFooter__socialLink" href="https://www.facebook.com/Goodreads/"><img alt="Goodreads on Facebook" src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
-                </a><a class="responsiveSiteFooter__socialLink" href="https://twitter.com/goodreads"><img alt="Goodreads on Twitter" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
+                </a>
+                <a class="responsiveSiteFooter__socialLink" href="https://twitter.com/goodreads"><img alt="Goodreads on Twitter" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
                 </a>                    
                 <a class="responsiveSiteFooter__socialLink" href="https://www.instagram.com/goodreads/"><img alt="Goodreads on Instagram" src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
-                </a><a class="responsiveSiteFooter__socialLink" href="https://www.linkedin.com/company/goodreads-com/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
+                </a>
+                <a class="responsiveSiteFooter__socialLink" href="https://www.linkedin.com/company/goodreads-com/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
                 </a>           
             </div><!--footer col1-3 -->
            </div>

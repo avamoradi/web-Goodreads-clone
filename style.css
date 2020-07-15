@@ -35,15 +35,9 @@ p{
   line-height: 18px;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around;
-
-}
-
  #top {
-  display: flex;
-  margin: 10px;;
+  margin: 0.5rem ;
+  width: 30%;
 }
 
 .header-top{
@@ -51,100 +45,106 @@ p{
 }
 
 .image-top{
-  max-width: 170px;
+  width: 10%;
   height: 40px;
-  margin: 10px;
+  margin: 1rem;
 }
 
-#top input{
+.formbox input{
+  margin: 0.3rem;
   display: block;
-  margin: 5px;
-  padding: 5px;
+  padding: 0.4rem;
   border:none;
+  border-radius: 3px;
+  font-size: 13px;
 }
 
-#top #rememberme{
-  display: inline;
+#top label {
+  font-size: 12px;
+  color: #999;
 }
 
 #top #submit{
-  width: 60px;
+  width:70px;
   height: 40px;
   background-color: #382110;
   color: white;
   border-radius: 5px;
   border: none;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .header-down{
-  justify-content: center;
   border-bottom: 15px solid #F3F2E8;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
-#form-head {
-  max-width:300px;
-}
 #form-head input {
 display: block;
-margin: 5px;
-padding: 5px;
-width: 90%;
+margin: 0.4rem;
+padding: 0.4rem;
 border: none;
 border-radius: 3px;
+}
+
+.input-form{
+  width: 80%;
 }
 
 #signin-button {
   background-color: #FDD05F;
   border: none;
   border-radius: 5px;
-  padding: 5px 0px 5px 0px;
+  padding: 0.4rem 0.3rem 0.3rem 0.4rem;
+  font-size: 18px;
+  width: 100px;
+
 }
 .image-head {
-  margin: 20px;
-  padding: 20px;
+  margin: 2rem;
+  padding: 2rem;
+  width: 30%;
 }
 
 .div-signin {
-  display: flex;
-  font-size: 10px;;
+  font-size: 10px;
 }
 
 .click{
   color: #7c7c79;
+  width: 55%;
 }
 
 .signin-logo{
-  display: flex;
+  align-content: space-between;
   background-color: #333333;
   color:white;
-  max-width: 300px;
-  padding: 7px;
-  border-radius: 5px;;
-  margin-top: 25px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  width: 80%;
+
 }
 
 .signin-logo ul {
-  display: flex;
   list-style: none;
 }
 
 .signin-logo span{
-  margin: 5px;
+  margin: 0.2rem;
 }
 
 .signin-logo img {
   max-width: 25px;
-  margin: 5px;;
+  margin: 0.2rem;
 }
 
 .head-right {
   width: 25%;
-  margin-left:150px;
 }
 
 .head-right h2{
-  margin: 10px;
+  margin: 1rem;
   font-size: 20px;
   font-weight:normal;
 }
@@ -156,18 +156,18 @@ main{
 
   #main-left {
   width: 65%;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .main-right {
   width: 35%;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .box{
   font-size: 13px;
   width: 40%;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .box h3 {
@@ -178,13 +178,24 @@ main{
   border: 1px solid #F4F2E9 ;
   border-radius: 10px;
   background-color: #F4F2E9;
-  
+  padding: 0.3rem 0rem 1rem 0rem;
+}
+
+#left-row2 h3 {
+  margin: 0.5rem;
+}
+
+.bi-fix {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAoCAYAAAA%2FtpB3AAAAOElEQVQIW2M6uG%2FlfyZGRkYGdIIBCKAsRgYMWXSCAU5gUYzVAAaELA5tCHUQAxjQZIFir16%2FhXAByw8GmnhQCm8AAAAASUVORK5CYII%3D);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  padding: 0.5rem;
 }
 
 #left-row2 img{
-  margin: 0px 12px 0px 0px;
-  width: 80px;
-  height: 100px;
+  margin: 0rem 0.6rem 0rem 0rem;
+  max-width: 80px;
+  max-height: 100px;
 }
 
 .arrow {
@@ -193,23 +204,34 @@ main{
 }
 
 .part1{
-  width:70%;
+  width:65%;
 }
 
 .part2{
-  width: 30%;
+  width: 35%;
 }
+
+.bi-fix p {
+  font-size: 12px;
+  padding: 0.3rem;
+}
+
+#browseBox {
+  margin-top: 2.5rem;
+  padding-top: 0.5rem;
+}
+
 
 .secondchild{
   line-height: 18px;
-  width: 110px;
-  font-size: 13px;
+  width:5%;
+  font-size: 13rem;
   font-weight: bold;
 }
 
 .article1{
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .article1 img{
@@ -217,16 +239,16 @@ main{
 }
 
 #listsTeaserBox h2{
-  margin: 20px 0px 10px 0px;
+  margin: 2rem 0rem 1remx 0rem;
 }
 
 .listTeaser{
   border-bottom: 1px solid  #ebece7;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .listTitle {
-  line-height: 10px;;
+  line-height: 10px;
 }
 
 .listTitle a {
@@ -255,7 +277,7 @@ main{
 }
 
 #authorsTeaserBox p {
-  margin: 18px 0px;
+  margin: 1.8rem 0rem;
   line-height: 18px;
   font-size: 14px;
 
@@ -273,7 +295,7 @@ main{
   border: 1px solid rgb(214, 208, 196);
   color: #333333;
   font-size: 11px;
-  padding: 4px 12px;
+  padding: 0.4rem 1.2rem;
 }
 
 .u-defaultType a {
@@ -291,17 +313,18 @@ main{
 font-size: 12px;
 line-height: 18px;
 text-align: left;
+margin-right: 0.3rem;
 }
 
 #column1{
   width:60%;
-  margin: 20px;
+  padding:0rem 9rem;
 }
 
 #column2{
-  margin: 20px;
   width: 20%;
   align-items: flex-end;
+  margin: 1.5rem 9rem 0rem 0rem;
 }
 
 
@@ -322,27 +345,28 @@ text-align: left;
 .responsiveSiteFooter__heading {
   font-weight: bold;
   line-height: 1.15;
-  margin: 12px 0;
+  margin: 1.2rem 0;
   text-transform: uppercase;
   color: #767676;
-  margin-bottom: 8px;
   font-size: 16px;
 
 }
 
 .gr-row{
-  margin-top: 20px;
+  margin-top: 0.2rem;
 }
 
 .gr-col-lg-4{
-  margin: 10px;
+  margin: 1rem;
+}
+
+.gr-col-lg-4 h3 {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .responsiveSiteFooter__socialLink {
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-right: 8px;
-
+  margin-right: 0.7rem;
 }
 
 .responsiveSiteFooter__appLinksColumnContents {
