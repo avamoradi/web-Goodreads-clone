@@ -8,29 +8,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="d-flex flex-column">
-    <div class="header-top d-flex justify-content-around">
-      <img class="image-top" src="header_logo.png" alt="header logo">
-      <form id="top" class="d-flex ">
-        <div class="formbox">
-          <input type="text" name="email" id="email" placeholder="Email address">
-          <div class="d-flex">
-            <input type="checkbox" name="rememberme" id="rememberme"  checked>
-            <label  for="rememberme">Remember me</label>
-          </div>
+  <header class="d-flex flex-column r-fullwidth">
+    <div class="header-top d-flex justify-content-around flexflow">
+      <img class= "image-top" alt="Goodreads: Book reviews, recommendations, and discussion" src="header_logo.png">
+      <div id="signInForm">
+        <form name="sign_in" class="d-flex" id="sign_in" action="https://www.goodreads.com/user/sign_in?source=home" accept-charset="UTF-8" method="post">       
+            <div class="formBox">
+              <input  type="email" name="user[email]" aria-label="Email address" placeholder="Email address">
+              <br>
+              <input type="checkbox" name="remember_me" checked="">
+              <label for="remember_me">Remember me</label>
+            </div>
+          
+            <div class="formBox">
+              <div style="position:relative">
+                <input value="" aria-label="Password" placeholder="Password" type="password" name="user[password]" >
+                <br>
+                <a class="greyText" rel="nofollow" href="/user/forgot_password">Forgot it?</a>
+              </div>
+            </div>
+          
+            <div class="formBox">
+              <input type="submit" value="Sign in" class="gr-button ">
+              <input type="hidden" name="n" value="310457">
+            </div>
+          
+          </form>
         </div>
-        <div class="formbox">
-          <input type="text" name = "paswoord" id="paswoord" placeholder="Password">
-          <label for="paswoord">Forget it?</label>
-        </div>
-          <input  type="submit" id="submit" value="Sign in">
-      </form>
     </div><!--end of header top-->
-    <div class="header-down d-flex justify-content-around">
-      <div class="image-head">
-       <img  src="headline-e.png" alt="meet your next favorite book">
+    <div class="header-down d-flex justify-content-around flexflow">
+      <div >
+       <img class="image-head" src="headline-e.png" alt="meet your next favorite book">
       </div>
-      <div class="head-right">
+      <div class="head-right r-fullwidth">
         <h2>New here? Create a free account!</h2>
         <form id="form-head">
           <input class="input-form" type="text" name="user-name" placeholder="Name">
@@ -55,9 +65,9 @@
      </div>
     </div> <!--end of header down-->
   </header>
-    <main class="d-flex flex-row bd-highlight mb-3">
-      <div id="main-left" class="d-flex flex-column bd-highlight mb-3" >
-        <div class="left-row1 d-flex justify-content-between p-2 bd-highlight">
+    <main class="d-flex flex-row bd-highlight r-fullwidth flexflow ">
+      <div id="main-left" class="d-flex flex-column bd-highlight " >
+        <div class="left-row1 d-flex justify-content-between  bd-highlight">
           <div class="box">
             <h3>Deciding what to read next?</h3>
             <div>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</div>
@@ -69,11 +79,11 @@
             </div>
           </div>
         </div><!--end of row1-->
-        <div id="left-row2" class=" bd-highlight " >
+        <div id="left-row2" class="r-fullwidth" >
           <h3>
             What will you discover?
           </h3>
-          <div class="d-flex  bi-fix">
+          <div class="d-flex  bi-fix flexflow">
             <div class="part1">
               <p>Because Deborah liked…</p>
               <img src="1618._SX98_.jpg" alt="">
@@ -84,13 +94,13 @@
             </div>
             <div class="part2">
               <p>She discovered:</p>
-              <div class="d-flex flex-row bd-highlight she-d">
+              <div class="d-flex flex-row bd-highlight ">
               <img src="50365._SX98_.jpg" alt="">
               <p class="secondchild">Steam Punk, Science Fiction, Fantasy</p>
               </div>
             </div>
           </div> <!--end of discover row1-->
-          <div class="d-flex  bi-fix">
+          <div class="d-flex  bi-fix flexflow">
             <div class="part1">
               <p>Because Deborah liked…</p>
               <img src="9648068._SX98_.jpg" alt="">
@@ -186,7 +196,7 @@
 
       </div><!--end of main left-->
 
-      <div class="main-right d-flex flex-column bd-highlight mb-3">
+      <div class="main-right d-flex flex-column bd-highlight  r-fullwidth">
         <div class="article1 p-2 bd-highlight">
           <h3>News & Interviews</h3>
           <a href="https://www.goodreads.com/interviews/show/1499.Colin_Jost?int=Soapbox_Signed_Out_2020_Jul&amp;int_sub=Interview_1499">This Just In: ‘SNL’ Star Colin Jost Is Seriously Bookish</a>
@@ -198,7 +208,7 @@
 
         <div id="listsTeaserBox" class="featureTeaserBox p-2 bd-highlight">
           <h2>Love lists?</h2>
-          <div class="listTeaser d-flex justify-content-between">
+          <div class="listTeaser d-flex justify-content-between flexflow">
             <div class="flexlink">
               <div class="listTitle">
                 <a href="/list/show/19.Best_for_Book_Clubs">Best for Book Clubs</a>
@@ -215,7 +225,7 @@
             </div>
           </div>
 
-          <div class="listTeaser d-flex justify-content-between">
+          <div class="listTeaser d-flex justify-content-between flexflow">
             <div class="flexlink">
               <div class="listTitle">
                 <a href="/list/show/6.Best_Books_of_the_20th_Century">Best Books of the 20th Century
@@ -234,7 +244,7 @@
             </div>
           </div>
 
-          <div class="listTeaser d-flex justify-content-between">
+          <div class="listTeaser d-flex justify-content-between flexflow">
             <div class="flexlink">
               <div class="listTitle">
                 <a href="/list/show/11.Best_Crime_Mystery_Books">Best Crime &amp; Mystery Books</a>
@@ -276,11 +286,9 @@
       </div><!--end of main right-->
     </main>
 
-    <footer class="responsiveSiteFooter">
-      <div  >
-        <div class="gr-row " >
-          <div class=" d-flex flex-row bd-highlight  justify-content-between">
-            <div class=" d-flex flex-row bd-highlight  justify-content-between" id="column1">
+    <footer class="responsiveSiteFooter">    
+          <div class="gr-row  d-flex flex-row bd-highlight  justify-content-around flexflow">
+            <div class="d-flex flex-row bd-highlight  justify-content-between" id="column1">
               <div class="gr-col-lg-4  bd-highlight">
                 <h3 class="responsiveSiteFooter__heading">Company</h3>
                 <ul class="responsiveSiteFooter__linkList">
@@ -323,44 +331,43 @@
                 <a class="responsiveSiteFooter__link" href="/api">API</a>
                 </li>
                 </ul>
-            </div><!--footer col1-2 -->
-            <div class=" gr-col-lg-4  bd-highlight">
-              <h3 class="responsiveSiteFooter__heading">Connect</h3>
-              <div class="responsiveSiteFooter__socialLinkWrapper d-flex">
-                <a class="responsiveSiteFooter__socialLink" href="https://www.facebook.com/Goodreads/"><img alt="Goodreads on Facebook" src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
-                </a>
-                <a class="responsiveSiteFooter__socialLink" href="https://twitter.com/goodreads"><img alt="Goodreads on Twitter" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
-                </a>                    
-                <a class="responsiveSiteFooter__socialLink" href="https://www.instagram.com/goodreads/"><img alt="Goodreads on Instagram" src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
-                </a>
-                <a class="responsiveSiteFooter__socialLink" href="https://www.linkedin.com/company/goodreads-com/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
-                </a>           
-            </div><!--footer col1-3 -->
-           </div>
-          </div><!--footer column 1-->
-          <div class="" id="column2">
-            <div class="responsiveSiteFooter__appLinksColumnContents d-flex flex-column justify-content-end">
-              <div class="responsiveSiteFooter__appLinksColumnBadges">
-                <a href="https://itunes.apple.com/app/apple-store/id355833469?pt=325668&amp;ct=mw_footer&amp;mt=8"><img alt="Download app for iOS" src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg">
-                </a><a href="https://play.google.com/store/apps/details?id=com.goodreads&amp;utm_source=mw_footer&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Download app for Android" srcset="https://s.gr-assets.com/assets/app/badge-android-desktop-home-2x-e31514e1fb4dddecf9293aa526a64cfe.png 2x" src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png">
-                </a>
+              </div><!--footer col1-2 -->
+              <div class=" gr-col-lg-4  bd-highlight" >
+                  <h3 class="responsiveSiteFooter__heading">Connect</h3>
+                  <div class="responsiveSiteFooter__socialLinkWrapper d-flex flexflow">
+                    <a class="responsiveSiteFooter__socialLink" href="https://www.facebook.com/Goodreads/"><img alt="Goodreads on Facebook" src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
+                    </a>
+                    <a class="responsiveSiteFooter__socialLink" href="https://twitter.com/goodreads"><img alt="Goodreads on Twitter" src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
+                    </a>                    
+                    <a class="responsiveSiteFooter__socialLink" href="https://www.instagram.com/goodreads/"><img alt="Goodreads on Instagram" src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
+                    </a>
+                    <a class="responsiveSiteFooter__socialLink" href="https://www.linkedin.com/company/goodreads-com/"><img alt="Goodreads on LinkedIn" src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg">
+                    </a>           
+                </div><!--footer col1-3 -->
               </div>
-              <ul class="responsiveSiteFooter__linkList">
-                <li class="responsiveSiteFooter__linkListItem">
-                ©
-                2020
-                Goodreads, Inc.
-                </li>
-                <li class="responsiveSiteFooter__linkListItem">
-                <a class="responsiveSiteFooter__link" href="/toggle_mobile">Mobile version
-                </a>
-                </li>
-              </ul>
-            </div>
-          </div><!--footer column 2-->
+            </div><!--footer column 1-->
+            <div id="column2">
+              <div class="responsiveSiteFooter__appLinksColumnContents d-flex flex-column">
+                <div class="responsiveSiteFooter__appLinksColumnBadges">
+                  <a href="https://itunes.apple.com/app/apple-store/id355833469?pt=325668&amp;ct=mw_footer&amp;mt=8"><img alt="Download app for iOS" src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg">
+                  </a><a href="https://play.google.com/store/apps/details?id=com.goodreads&amp;utm_source=mw_footer&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Download app for Android" srcset="https://s.gr-assets.com/assets/app/badge-android-desktop-home-2x-e31514e1fb4dddecf9293aa526a64cfe.png 2x" src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png">
+                  </a>
+                </div>
+                <ul class="responsiveSiteFooter__linkList">
+                  <li class="responsiveSiteFooter__linkListItem">
+                  ©
+                  2020
+                  Goodreads, Inc.
+                  </li>
+                  <li class="responsiveSiteFooter__linkListItem">
+                  <a class="responsiveSiteFooter__link" href="/toggle_mobile">Mobile version
+                  </a>
+                  </li>
+                </ul>
+              </div>
+           </div><!--footer column 2-->
          </div>  <!--flex div column1,2-->
-        </div> <!--gr row--> 
-      </div> <!--responsiveSiteFooter__contents-->
+       
     </footer>
 </body>
 </html>

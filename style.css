@@ -35,38 +35,44 @@ p{
   line-height: 18px;
 }
 
- #top {
-  margin: 0.5rem ;
-  width: 30%;
-}
+ 
 
 .header-top{
   border-bottom: 1px solid #9c9c9a;
 }
 
-.image-top{
-  width: 10%;
-  height: 40px;
-  margin: 1rem;
+#sign_in {
+  margin: 0.5rem ;
+  
 }
 
-.formbox input{
-  margin: 0.3rem;
-  display: block;
+.image-top{
+  max-width: 120px;
+  height: auto;
+  margin: 0.5rem
+}
+
+.formBox {
+  width:30%;
+}
+
+.formBox input{
+  margin: 0.2rem;
   padding: 0.4rem;
   border:none;
   border-radius: 3px;
   font-size: 13px;
+  max-width: 90%;
+  
 }
 
-#top label {
+.formBox label,a {
   font-size: 12px;
   color: #999;
 }
 
-#top #submit{
-  width:70px;
-  height: 40px;
+ .formBox .gr-button{
+  max-width: 100%;
   background-color: #382110;
   color: white;
   border-radius: 5px;
@@ -81,7 +87,6 @@ p{
 }
 
 #form-head input {
-display: block;
 margin: 0.4rem;
 padding: 0.4rem;
 border: none;
@@ -102,9 +107,9 @@ border-radius: 3px;
 
 }
 .image-head {
-  margin: 2rem;
   padding: 2rem;
-  width: 30%;
+  max-width: 100%;
+  height: auto;
 }
 
 .div-signin {
@@ -151,7 +156,7 @@ border-radius: 3px;
 
 main{
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
 
   #main-left {
@@ -166,7 +171,7 @@ main{
 
 .box{
   font-size: 13px;
-  width: 40%;
+  width: 45%;
   padding: 1rem;
 }
 
@@ -193,7 +198,7 @@ main{
 }
 
 #left-row2 img{
-  margin: 0rem 0.6rem 0rem 0rem;
+  margin: 0rem 0.4rem 0rem 0rem;
   max-width: 80px;
   max-height: 100px;
 }
@@ -212,8 +217,8 @@ main{
 }
 
 .bi-fix p {
-  font-size: 12px;
-  padding: 0.3rem;
+  font-size: 0.6em;
+  padding: 0.1rem;
 }
 
 #browseBox {
@@ -239,12 +244,12 @@ main{
 }
 
 #listsTeaserBox h2{
-  margin: 2rem 0rem 1remx 0rem;
+  margin: 2rem 0rem 1rem 0rem;
 }
 
 .listTeaser{
   border-bottom: 1px solid  #ebece7;
-  padding: 0.5rem;
+  padding: 0.4rem;
 }
 
 .listTitle {
@@ -252,7 +257,7 @@ main{
 }
 
 .listTitle a {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: normal;
   text-decoration: none;
   color: #00635d;
@@ -260,7 +265,8 @@ main{
 }
 
 .smallText {
-  font-size: 11px;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
   line-height: 14px;
   text-align: left;
   color:#999;
@@ -314,17 +320,17 @@ font-size: 12px;
 line-height: 18px;
 text-align: left;
 margin-right: 0.3rem;
+border: 1px solid gray;
 }
 
 #column1{
   width:60%;
-  padding:0rem 9rem;
+  padding:0rem 2rem;
 }
 
 #column2{
   width: 20%;
   align-items: flex-end;
-  margin: 1.5rem 9rem 0rem 0rem;
 }
 
 
@@ -347,9 +353,8 @@ margin-right: 0.3rem;
   line-height: 1.15;
   margin: 1.2rem 0;
   text-transform: uppercase;
+  font-size: 0.9rem;
   color: #767676;
-  font-size: 16px;
-
 }
 
 .gr-row{
@@ -358,11 +363,6 @@ margin-right: 0.3rem;
 
 .gr-col-lg-4{
   margin: 1rem;
-}
-
-.gr-col-lg-4 h3 {
-  font-weight: 700;
-  font-size: 16px;
 }
 
 .responsiveSiteFooter__socialLink {
@@ -376,9 +376,54 @@ margin-right: 0.3rem;
 }
 
 footer{
-  height: 240px;
+  height: auto;
 }
 
 
+@media only screen and (max-width:768px) {
 
+  .flexflow {
+    flex-flow: column wrap;
+  }
+
+  .r-fullwidth {
+    width: 100%;
+  }
+
+    #main-left {
+    width:100%;
+  }
+
+    .part2{
+    width: 35%;
+  }
+
+  #column1 {
+  width: 100%;
+}
+
+#column2 {
+  width: 100%;
+}
+
+ .responsiveSiteFooter__socialLinkWrapper {
+  flex-flow: column wrap;
+}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1200px){
+main {
+  width: 100%;
+}
+
+.listTeaser {
+  flex-flow: column wrap;
+}
+
+.signin-logo{
+  flex-flow: column wrap;
+
+}
+}
 
